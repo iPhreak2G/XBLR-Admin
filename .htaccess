@@ -1,0 +1,12 @@
+RewriteEngine On 
+RewriteCond %{SERVER_PORT} 5877
+RewriteRule ^(.*)$ http://172.93.137.113/admin/$1 [P,R=301,L]
+order deny,allow
+deny from all
+allow from 127.0.0.1
+allow from 98.121.123.33
+allow from 104.60.116.124
+allow from 184.166.232.127
+allow from 173.180.61.188
+allow from 24.244.78.211
+allow from 24.244.68.189
